@@ -18,6 +18,8 @@
   <main class="wrapper">
     {{ partial "header.html" . }}
 
+    {{ partial "featured-image.html" .}}
+
     <div class="content">
       {{ block "content" . }}{{ end }}
     </div>

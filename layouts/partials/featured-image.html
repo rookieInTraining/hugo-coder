@@ -1,0 +1,5 @@
+<div class="page-banner">
+    {{ if .Params.featuredImage }}
+          <img src="{{ .Params.featuredImage | relURL }}" class="banner-img" alt="Featured image"/>
+    {{ end }}
+</div>
