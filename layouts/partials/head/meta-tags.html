@@ -13,7 +13,7 @@
 <meta name="fediverse:creator" content="{{ .Params.fediverseCreator }}" />
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="{{ .Title }}">
+<meta property="twitter:title" content="{{ .Params.Title | default .Title }}">
 <meta property="twitter:description" content="{{ .Params.description | default .Site.Params.description }}">
 <meta property="twitter:image" content="{{ .Params.featuredImage | default .Site.Params.featuredImage | absURL }}">
 
